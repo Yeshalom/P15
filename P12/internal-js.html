@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>internal-js</title>
+    </head>
+<body>
+    <p>JavaScript Internal Style</p>
+
+    <br>
+    <button id="buttonAlert" onclick="">Klik Button !!</button>
+    <a href="#" id="linkAlert" onclick="">Klik Link !!</a>
+
+    <br>
+    <p id="demo">JavaScript can change HTML content</p>
+    <button type="button" id="buttonUpdateContent">Klik, Update content demo !</button>
+
+    <br>
+    <p id="demo2">JavaScript can change css style</p>
+    <button type="button" id="buttonUpdateCSS">Klik, Update context demo!</button>
+
+    <script>
+    alert("Hello, ini adalah program JS Internal!")
+
+    //Alert for button
+    document.getElementById("buttonAlert").onclick = function (){
+        alert("Hello, JavaScript by button!");
+    };
+
+    //Alert for link
+    document.getElementById("linkAlert").onclick = function(event){
+        event.preventDefault();
+        alert("Hello, JavaScript by href link!");
+    };
+
+
+    
+    </script>
+
+</body>
+
+
+</html>

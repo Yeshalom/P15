@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>Detail Mobil</h1>
+    <table border="1" width="20%" id="tableOutput">
+        <tr>
+            <th>Properti</th>
+            <th>Nilai</th>
+        </tr>
+    </table>
+
+    <script src="js/object.js"></script>
+
+    <script>
+        if (typeof mobil !=="undefined") {
+            var table = document.getElementById("tableOutput");
+            for (var key in mobil) {
+                var row = `<tr>
+                    <td length = 3>${key}</td>
+                    <td>${mobil[key]}</td>
+                </tr>`;
+                table.innerHTML += row;
+            }
+        }else{
+            console.error("Objek mobil tidak ditemukan.");
+        }
+    </script>
+</body>
+</html>

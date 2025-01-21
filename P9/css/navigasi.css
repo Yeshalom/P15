@@ -1,0 +1,58 @@
+nav {
+    background-color: #1183acb8;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    position: relative; /*Untuk submenu */
+    margin: 0 15px; /* Jarak antar item menu */
+}
+
+nav ul li a {
+    text-decoration: none; /* Hilangkan garis bawah */
+    color: white; /* Warna teks */
+    font-size: 18px; /* Ukurar teks */
+    padding: 10px 15px; /* Jarak dalam link */
+    display: block; /* Agar area klik mencakup seluruh elemen */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Animasi hover */
+}
+
+nav ul li a:hover {
+    background-color: #1183acb8; /* Warna latar saat hover */
+    color: #ffd700; /* Warna  teks saat hover */
+}
+
+/* Style unutk submenu */
+nav ul .submenu {
+    list-style-type: none; /* Hilangkan bullet point */
+    margin: 0;
+    padding: 0;
+    position: absolute; /* Posisi relatif terhadap menu utama */
+    top: 100%; /* Letakkan submenu di bawah menu utama */
+    left: 0; /* Sejajarkan dengan menu utama */
+    background-color: #0056b3; /* Warna latar submenu */
+    display: none; /* Sembunyikan submenu secara default */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+    z-index: 1000; /* Pastikan submenu berada di atas elemen lain */
+}
+
+nav ul .submenu li {
+    margin: 0;
+}
+
+nav ul .submenu li a {
+    font-size: 16px; /* Ukuran teks submenu */
+    padding: 10px 20px; /* jarak dalam link submenu utama */
+}
+
+/* Tampil;an submenu saat hover pada menu utama */
+nav ul li:hover .submenu {
+    display: block;
+}

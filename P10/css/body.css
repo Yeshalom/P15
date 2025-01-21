@@ -1,0 +1,49 @@
+/* CSS */
+
+/* Style umum untuk body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+#beranda {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px 40px;
+    box-shadow: 0 4px 8px rgb(71, 61, 61);
+    border-radius: 10px;
+
+    height: 100vh; /* Tinggi prnuh viewport*/
+    display: flex; /* Aktifkan flexbox*/
+    flex-direction: column; /* Tata letak vertikal */
+    justify-content: center; /* Pusatkan secara vertikal*/
+    align-items: center; /* Pusatkan secara horizontal */
+    background-color: #ffffff; /* Warna latar belakang */
+}
+
+#beranda h1 {
+    margin: 0 10px 10px;
+    color: blue;
+}
+
+#beranda p {
+    margin: 0;
+    color: rgb(56, 52, 52)
+}
+
+#footer {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+    height: 5vh; /*Tinggi penuh viewport*/
+    display: flex; /*Aktifkan Flexbox*/
+    flex-direction: column; /*Tata letak vertikal*/
+    justify-content: right; /*Pusatkan secara vertikal*/
+    align-items: right; /*Pusatkan secara horizontal*/
+    background-color: #eff4f6 /*Warna latar belakang*/
+}

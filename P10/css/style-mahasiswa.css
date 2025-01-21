@@ -1,0 +1,121 @@
+/* Styling untuk body */
+
+/* Styling untuk form */
+form {
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Garis bawah (hr) */
+form hr {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+/* Styling untuk div di dalam form*/
+form div {
+    margin-bottom: 15px;
+}
+
+/* Styling untuk input teks*/
+form input[type="text"], input[type="email"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Styling untuk textarea*/
+form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+/* Styling untuk dropdown (select)*/
+form select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Styling untuk checkbox*/
+form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Styling untuk radio button*/
+form input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Styling untuk radio button*/
+form input[type="submit"]
+form input[type="reset"] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+form input[type="reset"] {
+    background-color: red;
+}
+
+/* Hover effect pada tombol */
+form input[type="submit"];:hover,
+form input[type="reset"];:hover {
+    background-color: black;
+}
+
+/* Styling responsif untuk form */
+@media (max-width: 600px) {
+    form input[type="text"],
+    form textarea,
+    form select {
+        width: 100%;
+    }
+}
+
+#mhs {
+    /* text-align: center; */
+    background-color: #ffffff;
+    padding: 20px 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+    /* Tinggi penuh viewport*/
+    height: 80vh;
+
+    /* Aktifkan Flexbox */
+    display: flex;
+    
+    /* Tata letak vertikal*/
+    flex-direction: column;
+
+    /* Pusatkan secara vertikal */
+    justify-content: center;
+
+    /* Pusatkan secara horizontal */
+    align-items: center;
+    background-color: #f4f4f4;  /* Warna latar belakang*/
+}
